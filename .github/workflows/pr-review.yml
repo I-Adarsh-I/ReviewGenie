@@ -18,7 +18,7 @@ jobs:
           node-version: 18
         
       - name: Install Dependencies
-        uses: npm install @octokit/rest @google/generative-ai discord.js dotenv
+        run: npm install @octokit/rest @google/generative-ai discord.js dotenv
 
       - name: Run ReviewGenie
         run: node index.js
