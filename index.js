@@ -13,7 +13,7 @@ const codeReviewByGemini = async() => {
   const pullRequestNumber = core.getInput("REPOSITORY_NUMBER");
 
   try {
-    console.log("Logging repo name, owner and PR number");
+    console.log("Logging repo name, owner and PR number", repoName, repoOwner, pullRequestNumber);
   } catch (err) {
     console.log("Error happend while extracting github acc info");
   }
