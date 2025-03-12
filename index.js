@@ -8,12 +8,12 @@ const PORT = process.env.PORT || 3000;
 const codeReviewByGemini = async() => {
   console.log("CODE REVIEW BY GEMINI");
 
-  const repoName = core.getInput("REPOSITORY_NAME");
-  const repoOwner = core.getInput("REPOSITORY_OWNER");
-  const pullRequestNumber = core.getInput("REPOSITORY_NUMBER");
+  const repoName = process.env.REPOSITORY_NAME;
+  const repoOwner = process.env.REPOSITORY_OWNER;
+  const pullRequestNumber = process.env.PULL_REQUEST_NUMBER;
 
   try {
-    console.log("Logging repo name, owner and PR number");
+    console.log("Logging repo name, owner and PR number", repoName, repoOwner, pullRequestNumber);
   } catch (err) {
     console.log("Error happend while extracting github acc info");
   }
