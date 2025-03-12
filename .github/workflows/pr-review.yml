@@ -1,6 +1,4 @@
 name: ReviewGenie
-description: "Gemini based pull request code reviewer"
-author: "Adarsh Singh"
 
 on: 
   pull_request:
