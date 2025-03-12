@@ -10,7 +10,7 @@ const codeReviewByGemini = async() => {
 
   const repoName = core.getInput("REPOSITORY_NAME");
   const repoOwner = core.getInput("REPOSITORY_OWNER");
-  const pullRequestNumber = core.getInput("REPOSITORY_NUMBER");
+  const pullRequestNumber = core.getInput("PULL_REQUEST_NUMBER");
 
   try {
     console.log("Logging repo name, owner and PR number", repoName, repoOwner, pullRequestNumber);

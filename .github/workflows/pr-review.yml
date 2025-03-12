@@ -29,5 +29,5 @@ jobs:
           DISCORD_CHANNEL_ID: ${{ secrets.DISCORD_CHANNEL_ID }}
           REPOSITORY_NAME: ${{ github.event.repository.name }}
           REPOSITORY_OWNER:  ${{ github.repository_owner }}
-          REPOSITORY_NUMBER: ${{ github.events.pull_request.number }}
+          PULL_REQUEST_NUMBER: ${{ github.event.pull_request.number }}
 
